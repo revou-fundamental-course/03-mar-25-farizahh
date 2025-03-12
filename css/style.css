@@ -1,0 +1,321 @@
+<<<<<<< HEAD
+/* ini css */
+=======
+/* ini css */
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: 'Poppins', sans-serif;
+    /* width: 1366px;
+    height: 578px; */
+    margin: 0 auto; /* Agar tetap di tengah jika lebih kecil dari layar */
+    overflow-x: hidden;
+}
+hr{
+    margin: 20px 0px 20px 0px;
+}
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 50px 0px 50px;
+}
+
+/* .main-logo {
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+} */
+ .main-logo p{
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: 600;
+ }
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav>a {
+    padding: 8px;
+    border: 1px solid;
+    text-decoration: none;
+    color: black;
+}
+
+/* css section home */
+.header-container {
+    display: grid;
+    grid-template-columns: 60% 40%; /* Kolom kiri 80%, kanan 20% */
+    gap: 20px; /* Jarak antar kolom  */
+    align-items: center; /* Biar rata tengah */
+    margin: 0px 50px 0px 50px;
+}
+
+.header-text h1 {
+    font-size: 32px;
+    margin: 10px 0px 10px 0px;
+    color: #254336;
+}
+
+.header-text h1 .nama{
+    color: #8B8858;
+}
+
+.header-text p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #254336;
+    font-weight: 600;
+}
+
+.ubah-nama{
+    width: 20%;
+    padding: 10px;
+    margin-top: 10px;
+}
+.mySlides {
+    display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.slideshow-container img {
+    vertical-align: middle;
+    background-color: #192e25;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+/* css section profile */
+#profile {
+    padding: 0px 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 40% 60%; /* Kolom kiri 80%, kanan 20% */
+    gap: 20px;
+    margin: 0px 50px 0px 50px;
+}
+
+.profile-img {
+    width: 60%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text {
+    margin-left: 20px;
+    color: #254336;
+}
+
+.profile-text p{
+    font-weight: 500;
+}
+
+/* css section project */
+.project-container{
+    margin: 0px 50px 0px 50px;
+    color: #254336;
+}
+.project-container p {
+    font-size: 16px;
+    margin-top: -17px;
+    font: 500;
+}
+.project-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Buat 3 kolom */
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px; /* Atur tinggi agar seragam */
+    object-fit: cover; /* Biar gambar tidak terdistorsi */
+}
+
+.container {
+    padding: 15px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.tags span {
+    background: #ffcc00;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* css section message */
+#messageus{
+    margin: 0px 50px 0px 50px;
+    color: #254336;
+}
+.message-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-weight: 600;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    width: 130px; /* Lebar lebih besar agar ":" sejajar */
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+label span {
+    margin-left: 5px; /* Biar ":" sejajar */
+}
+
+input, textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #254336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #192e25;
+}
+
+.hasil-form{
+    font-weight: 600;
+}
+.hasil-form span{
+    color: #8B8858;
+}
+
+/* footer */
+footer{
+    text-align: end;
+}
+
+@media only screen and (max-width: 600px) { 
+    /* CSS Navbar */
+    .main-header {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        margin: 20px 50px 0px 50px;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .ubah-nama{
+        width: 100%;
+    }
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 50px 0px 50px;
+    }
+    .profile-img {
+        width: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .project-card {
+        display: flex;
+        flex-direction: column;
+    }
+    .message-container{
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        width: 77px; /* Lebar lebih besar agar ":" sejajar */
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+>>>>>>> bbfd9f1 (update file)
