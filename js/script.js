@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-// ini js
-=======
 // variabel untuk indeks banner/slideshow
 let bannerIndex = 0;
 showBanner();
@@ -69,4 +66,3 @@ function setSenderUI(name, birthDate, gender, messages) {
     document.getElementById("sender-gender").textContent = gender;
     document.getElementById("sender-messages").textContent = messages;
 }
->>>>>>> bbfd9f1 (update file)
